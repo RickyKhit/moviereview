@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ricky's Movie Reviews</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Ricky's Movie Reviews</h1>
+      <nav role="navigation">
+        <ul>
+          <li><a href="#featured-reviews">Featured Reviews</a></li>
+          <li><a href="#user-reviews">Submit Your Review</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="featured-reviews">
+        <h2>Featured Reviews</h2>
+        <article>
+          <h3>Fight Club</h3>
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            alt="Fight Club"
+            class="movie-cover"
+          />
+          <p>
+            Fight Club is a gritty psychological drama that delves into themes
+            of identity, consumerism, and mental illness.
+            <a href="#more">Read more...</a>
+          </p>
+        </article>
+        <article>
+          <h3>500 Days of Summer</h3>
+          <img
+            src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p193428_p_v8_bb.jpg"
+            alt="500 days of summer"
+            class="movie-cover"
+          />
+          <p>
+            500 Days of Summer is a romantic drama that explores the
+            complexities of relationships through the lens of a non-linear
+            narrative.
+            <a href="#more">Read more...</a>
+          </p>
+        </article>
+      </section>
+
+      <section id="user-reviews">
+        <h2>Submit Your Review</h2>
+        <form method="post" aria-labelledby="submit-review-form">
+          <label for="movie-title" aria-label="Movie Title">Movie Title:</label>
+          <input
+            type="text"
+            id="movie-title"
+            name="movie-title"
+            required
+            aria-describedby="movie-title-description"
+          />
+          <span id="movie-title-description"
+            >Enter the title of the movie you're reviewing.</span
+          >
+
+          <label for="review-text" aria-label="Review">Review:</label>
+          <textarea
+            id="review-text"
+            name="review-text"
+            rows="4"
+            required
+            aria-describedby="review-text-description"
+          ></textarea>
+          <span id="review-text-description"
+            >Provide your detailed review of the movie.</span
+          >
+
+          <button type="submit" aria-label="Submit your review">
+            Submit Review
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <aside id="news" role="complementary">
+      <h2>Movie News</h2>
+      <img
+        src="https://variety.com/wp-content/uploads/2024/11/mission-.jpg?w=1000&h=667&crop=1&resize=1200%2C800"
+        class="movie-cover"
+      />
+      <h3>
+        Tom Cruise Says He Would ‘Pass Out’ From ‘Not Getting Oxygen’
+        <br />While Filming ‘Mission: Impossible’ Plane Stunts: ‘I Was Unable to
+        Get Back Into the Cockpit’
+      </h3>
+    </aside>
+
+    <footer role="contentinfo">
+      <p>
+        Contact us at
+        <a href="mailto:contact@moviereviewsbyricky.com"
+          >contact@moviereviewsbyricky.com</a
+        >
+      </p>
+      <div class="social-media-links">
+        <a href="https://x.com" target="_blank" aria-label="X">X</a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+          >Facebook</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
